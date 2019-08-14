@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         subscribe = findViewById(R.id.subscribe);
         this.subscribe.setOnClickListener(v -> {
-            HuggyChat chat = HuggyChat.getInstance("", getApplicationContext());
+            HuggyChat chat = HuggyChat.getInstance();
             chat.unsubscribeFromTopic();
         });
 
